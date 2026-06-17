@@ -14,4 +14,6 @@ add_executable(RunQ qlc/main.cpp
         qlc/CodeGen.hpp
         qlc/Token.hpp
         qlc/Node.hpp
+        qlc/Ast.hpp
+        qlc/Ast.cpp
 )

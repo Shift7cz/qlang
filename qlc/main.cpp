@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Lexer.hpp"
+#include "Parser.hpp"
 
 int main() {
     std::cout << "Hello, RunQ!" << std::endl;
@@ -20,6 +21,13 @@ int main() {
             isAtEnd = true;
         }
     }
+
+    std::cout << "\n\nParser out ->" << std::endl;
+
+    Parser parser(lexer);
+
+    parser.parse();
+    parser.ast.print();
 
     return 0;
 }
